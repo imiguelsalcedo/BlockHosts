@@ -30,7 +30,7 @@ if [ "$(id -u)" == "0" ]; then
 	echo "Instalando archivos en /usr/local/bin"
 	cp blockhosts.sh $DIR_OBJ/blockhosts.sh
 	chmod +x $DIR_OBJ/blockhosts.sh
-	echo "Instalacion completa. Ejecute: blockhost.sh para empezar."
+	echo "Instalacion completa. Ejecute: blockhosts.sh para empezar."
 else
    echo "¡¡¡Para ejecutar el script debes usar sudo!!!"
 fi
