@@ -34,12 +34,9 @@ hace como usuario normal.
 
 Entre las opciones del script están:
 
-* blockhosts.sh add hosts
-    Para agregar un hosts personalizado y bloquearlo
-* blockhosts.sh dell hosts
-    Para eliminar el bloqueo a un hosts en especifico.
-* blockhosts.sh restore
-    Para restaurar el archivo /etc/hosts a su estado original
+* blockhosts.sh add hosts: Para agregar un hosts personalizado y bloquearlo
+* blockhosts.sh dell hosts: Para eliminar el bloqueo a un hosts en especifico.
+* blockhosts.sh restore: Para restaurar el archivo /etc/hosts a su estado original
 
 Para desinstalar solo deberán ejecutar
 
