@@ -1,14 +1,12 @@
 #!/bin/bash
 
 if [ "$(id -u)" == "0" ]; then
-	echo "Comenzando desinstalación"
-	echo "Removiendo archivos de /usr/local/bin"
-	rm /usr/local/bin/blockhosts.sh
-	echo "Removiendo cronjob"
-	rm /etc/cron.weekly/cron_blockhost
-	echo "Archivo /etc/hosts resaturado"
-	mv /etc/hosts.bak /etc/hosts
-	echo "Desinstalacion completa"
+    echo "Comenzando desinstalación"
+    echo "Removiendo archivos de /usr/local/bin"
+    rm /usr/local/bin/blockhosts.sh
+    echo "Archivo /etc/hosts resaturado"
+    mv /etc/hosts.bak /etc/hosts
+    echo "Desinstalacion completa"
 else
    echo "¡¡¡Para ejecutar el script debes usar sudo!!!"
 fi

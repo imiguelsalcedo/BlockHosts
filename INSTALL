@@ -3,35 +3,23 @@
 DIR_OBJ=/usr/local/bin
 
 if [ "$(id -u)" == "0" ]; then
-	echo "Permisos de ejecucion garantizados."
-	echo "Comenzando la instalacion del script blockhosts.sh"
-	if [ -d $DIR_OBJ ]; then
-		echo "Directorio objetivo detectado: /usr/local/bin"
-	else 
-		echo "Directorio objetivo no detectado."
-		echo "Creando directorio: /usr/local/bin"
-		mkdir $DIR_OBJ
-	fi
-	
-	# Creando la tareas CRONTAB
-	if [ -d /etc/cron.weekly ]; then
-		echo "Realizando instalacion del trabajo cron en /etc/cron.weekly"
-		cp cron_blockhost /etc/cron.weekly/cron_blockhost
-		chmod 755 /etc/cron.weekly/cron_blockhost
-		chown root:root /etc/cron.weekly/cron_blockhost
-	else
-		echo "Directorio cron.weekly no detectado."
-		echo "Editando /etc/crontab para agregar el trabajo cron"
-		echo "Agregue la siguiente linea a su crontab"
-		echo "0 0 * * 0 root /usr/local/bin/blockhosts.sh"
-	fi
-	
-	# Copiando y asignando permisos al script
-	echo "Instalando archivos en /usr/local/bin"
-	cp blockhosts.sh $DIR_OBJ/blockhosts.sh
-	chmod +x $DIR_OBJ/blockhosts.sh
-	echo "Instalacion completa. Ejecute: blockhosts.sh para empezar."
+    echo "Permisos de ejecucion garantizados."
+    echo "Comenzando la instalacion del script blockhosts.sh"
+    if [ -d $DIR_OBJ ]; then
+        echo "Directorio objetivo detectado: /usr/local/bin"
+    else
+        echo "Directorio objetivo no detectado."
+        echo "Creando directorio: /usr/local/bin"
+        mkdir $DIR_OBJ
+    fi
+
+    # Copiando y asignando permisos al script
+    echo "Instalando archivos en /usr/local/bin"
+    cp blockhosts.sh $DIR_OBJ/blockhosts.sh
+    chmod +x $DIR_OBJ/blockhosts.sh
+    echo "Instalacion completa. Ejecute: blockhosts.sh para empezar."
 else
    echo "¡¡¡Para ejecutar el script debes usar sudo!!!"
 fi
+
 exit 0

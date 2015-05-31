@@ -22,7 +22,7 @@ Con eso ya tendrán instalado el script.
 
 Para ejecutar solo deben usar el comando:
 
-blockhost.sh
+blockhosts.sh
 
 O usando el path completo:
 

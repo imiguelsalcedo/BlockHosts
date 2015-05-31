@@ -97,6 +97,8 @@ awk '!x[$0]++' host_tmp >> hosts
 # Movemos el nuevo archivo a su posicion final
 echo "Copiando nuevo archivo /etc/hosts."
 echo "La operacion requiere de persmisos administrativos"
+sudo bash -c "chmod 644 hosts"
+sudo bash -c "chown root:root hosts"
 sudo bash -c "mv -v hosts /etc/hosts"
 
 # Borramos las listas originales

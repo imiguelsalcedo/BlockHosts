@@ -1,5 +1,0 @@
-#!/bin/bash
-
-/usr/local/bin/blockhosts.sh
-
-exit 0
