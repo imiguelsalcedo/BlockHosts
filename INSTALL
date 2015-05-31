@@ -23,7 +23,7 @@ if [ "$(id -u)" == "0" ]; then
 		echo "Directorio cron.weekly no detectado."
 		echo "Editando /etc/crontab para agregar el trabajo cron"
 		echo "Agregue la siguiente linea a su crontab"
-		echo "0 0 * * 1 root /usr/local/bin/blockhosts.sh"
+		echo "0 0 * * 0 root /usr/local/bin/blockhosts.sh"
 	fi
 	
 	# Copiando y asignando permisos al script
