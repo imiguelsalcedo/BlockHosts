@@ -3,7 +3,7 @@ BlockHosts
 
 Un pequeño script bash para crear archivos /etc/hosts personalizados
 
-Este script usa las listas de MVPS, MalwareDomains, Someonecares
+Este script usa las listas de MVPS, MalwareDomains, Someonecares,
 Yoyo List y Adway para crear un archivo hosts personalizado que bloquea
 buena parte de los dominios maliciosos y de publicidad de Internet.
 El script lleva consigo un sencillo instalador que a su vez automatiza
@@ -34,12 +34,9 @@ hace como usuario normal.
 
 Entre las opciones del script están:
 
-* blockhosts.sh add hosts
-    Para agregar un hosts personalizado y bloquearlo
-* blockhosts.sh dell hosts
-    Para eliminar el bloqueo a un hosts en especifico.
-* blockhosts.sh restore
-    Para restaurar el archivo /etc/hosts a su estado original
+* blockhosts.sh add hosts: Para agregar un hosts personalizado y bloquearlo
+* blockhosts.sh del hosts: Para eliminar el bloqueo a un hosts en especifico.
+* blockhosts.sh restore: Para restaurar el archivo /etc/hosts a su estado original
 
 Para desinstalar solo deberán ejecutar
 
