@@ -1,3 +1,4 @@
+
 BlockHosts
 ==========
 
@@ -10,27 +11,34 @@ El script lleva consigo un sencillo instalador que a su vez automatiza
 todo el proceso inicial de configuración y realiza la creación inicial
 del hosts, haciendo un respaldo del archivos hosts original.
 
+----------
+
 Para instalar el archivo solo necesita hacer el siguiente procedimiento:
 
-git clone https://github.com/YukiteruAmano/BlockHosts.git
+    git clone https://github.com/YukiteruAmano/BlockHosts.git
 
-cd BlockHosts
+Luego proceda a:
 
-sudo ./INSTALL
+    cd BlockHosts
+
+Y aplique el comando:
+
+    sudo ./INSTALL
+
 
 Con eso ya tendrán instalado el script.
 
 Para ejecutar solo deben usar el comando:
 
-blockhosts.sh
+    blockhosts.sh
 
 O usando el path completo:
 
-/usr/local/bin/blockhosts.sh
+    /usr/local/bin/blockhosts.sh
 
-En ambos cosas solo se le pedirán permisos administrativos en el momento
-de acceder y modificar los archivos del sistema, el resto del proceso se
-hace como usuario normal.
+
+En ambos cosas solo se le pedirán permisos administrativos en el momento de acceder
+y modificar los archivos del sistema, el resto del proceso se hace como usuario normal.
 
 Entre las opciones del script están:
 
@@ -40,4 +48,4 @@ Entre las opciones del script están:
 
 Para desinstalar solo deberán ejecutar
 
-sudo ./UNINSTALL
+    sudo ./UNINSTALL
